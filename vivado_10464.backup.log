@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Oct 21 16:35:42 2017
+# Process ID: 10464
+# Current directory: E:/Workspace/Vivado_16.4/2017_10_21_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11940 E:\Workspace\Vivado_16.4\2017_10_21_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_10_21_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_10_21_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Workspace/Vivado_16.4/2017_10_17_FFT' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 842.789 ; gain = 167.664
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 21 23:20:58 2017...

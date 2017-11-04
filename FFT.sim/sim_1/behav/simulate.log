@@ -1,0 +1,32 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fft.TOP_inst0.test_wave_inst0.ROM_inst0.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fft.TOP_inst0.test_wave_inst0.ROM_inst0.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0
+Warning: WARNING: SCLR is not implemented in this block to try and improve timing - may affect behaviour!
+Time: 0 ps  Iteration: 0

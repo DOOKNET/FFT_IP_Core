@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Oct 17 18:34:50 2017
+# Process ID: 15016
+# Current directory: E:/Workspace/Vivado_16.4/2017_10_17_FFT/FFT.runs/ROM_synth_1
+# Command line: vivado.exe -log ROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM.tcl
+# Log file: E:/Workspace/Vivado_16.4/2017_10_17_FFT/FFT.runs/ROM_synth_1/ROM.vds
+# Journal file: E:/Workspace/Vivado_16.4/2017_10_17_FFT/FFT.runs/ROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM.tcl -notrace

@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Oct 25 23:51:18 2017
+# Process ID: 1232
+# Current directory: E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/TOP.vds
+# Journal file: E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 298.016 ; gain = 88.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/TOP.v:1]
+INFO: [Synth 8-638] synthesizing module 'test_wave' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/test_wave.v:1]
+	Parameter Freq_I bound to: 4294967 - type: integer 
+	Parameter Freq_Q bound to: 12884902 - type: integer 
+	Parameter cnt_width bound to: 8'b00100000 
+INFO: [Synth 8-638] synthesizing module 'ROM' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (1#1) [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'test_wave' (2#1) [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/test_wave.v:1]
+INFO: [Synth 8-638] synthesizing module 'FFT_Control' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:1]
+INFO: [Synth 8-638] synthesizing module 'FFT' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'FFT' (3#1) [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
+WARNING: [Synth 8-3848] Net data_out_im in module/entity FFT_Control does not have driver. [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:5]
+INFO: [Synth 8-256] done synthesizing module 'FFT_Control' (4#1) [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:1]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (5#1) [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/TOP.v:1]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[13]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[12]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[11]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[10]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[9]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[8]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[7]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[6]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[5]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[4]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[3]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[2]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[1]
+WARNING: [Synth 8-3331] design FFT_Control has unconnected port data_out_im[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 335.508 ; gain = 125.672
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[13] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[13]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[13] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[27]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[12] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[12]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[12] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[26]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[11] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[11]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[11] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[25]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[10] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[10]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[10] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[24]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[9] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[9]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[9] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[23]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[8] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[8]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[8] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[22]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[7] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[7]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[7] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[21]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[6] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[6]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[6] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[20]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[5] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[5]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[5] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[19]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[4] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[4]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[4] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[18]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[3] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[3]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[3] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[17]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[2] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[2]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[2] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[16]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[1] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[1]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[1] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[15]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[0] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[0]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re[0] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[14]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       14|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 335.508 ; gain = 125.672
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'FFT' instantiated as 'FFT_Control_inst1/FFT_inst0' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ROM' instantiated as 'test_wave_inst0/ROM_inst0' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/test_wave.v:29]
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/dcp/ROM_in_context.xdc] for cell 'test_wave_inst0/ROM_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/dcp/ROM_in_context.xdc] for cell 'test_wave_inst0/ROM_inst0'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/dcp_2/FFT_in_context.xdc] for cell 'FFT_Control_inst1/FFT_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/.Xil/Vivado-1232-DESKTOP-JC6NIF0/dcp_2/FFT_in_context.xdc] for cell 'FFT_Control_inst1/FFT_inst0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 621.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+Module FFT_Control 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[13]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[12]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[11]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[10]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[9]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[8]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port data_im[0]
+WARNING: [Synth 8-3332] Sequential element (test_wave_inst0/cnt_Q_reg[0]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[13] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[13]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[13] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[27]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[12] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[12]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[12] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[26]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[11] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[11]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[11] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[25]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[10] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[10]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[10] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[24]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[9] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[9]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[9] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[23]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[8] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[8]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[8] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[22]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[7] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[7]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[7] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[21]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[6] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[6]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[6] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[20]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[5] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[5]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[5] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[19]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[4] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[4]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[4] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[18]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[3] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[3]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[3] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[17]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[2] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[2]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[2] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[16]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[1] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[1]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[1] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[15]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[0] with 1st driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[0]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data_re_OBUF[0] with 2nd driver pin 'FFT_Control_inst1/FFT_inst0/m_axis_data_tdata[14]' [E:/Workspace/Vivado_16.4/2017_10_21_FFT/Design/Code/FFT_Control.v:41]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       14|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |FFT           |         1|
+|2     |ROM           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |FFT    |     1|
+|2     |ROM    |     1|
+|3     |BUFG   |     1|
+|4     |CARRY4 |    20|
+|5     |LUT1   |    64|
+|6     |LUT2   |    13|
+|7     |FDRE   |    77|
+|8     |IBUF   |     1|
+|9     |OBUF   |    14|
+|10    |OBUFT  |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   308|
+|2     |  FFT_Control_inst1 |FFT_Control |    90|
+|3     |  test_wave_inst0   |test_wave   |   188|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 621.625 ; gain = 411.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 28 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 621.625 ; gain = 111.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 621.625 ; gain = 411.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 32 Warnings, 56 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 621.625 ; gain = 400.777
+INFO: [Common 17-1381] The checkpoint 'E:/Workspace/Vivado_16.4/2017_10_21_FFT/FFT.runs/synth_1/TOP.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 621.625 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 25 23:52:05 2017...
