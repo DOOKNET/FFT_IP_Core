@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../Design/Code/FFT_Control.v"
+verilog xil_defaultlib  "../../../TestBeach/tb_fft.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

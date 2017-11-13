@@ -409,7 +409,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -421,7 +421,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -482,7 +482,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -494,7 +494,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -512,7 +512,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -524,7 +524,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -543,7 +543,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -555,7 +555,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -616,7 +616,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -628,7 +628,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>f4fd796a</spirit:value>
+            <spirit:value>348363ca</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -647,7 +647,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -659,7 +659,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>f4fd796a</spirit:value>
+            <spirit:value>348363ca</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -678,7 +678,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:24 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -690,7 +690,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -709,7 +709,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:25 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -721,7 +721,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>f4fd796a</spirit:value>
+            <spirit:value>348363ca</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -739,7 +739,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:23:25 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:06:58 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -751,7 +751,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -769,7 +769,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Oct 25 15:29:36 UTC 2017</spirit:value>
+            <spirit:value>Mon Nov 13 07:11:00 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -781,7 +781,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>4f66686c</spirit:value>
+            <spirit:value>7704821d</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1278,7 +1278,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_NFFT_MAX</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NFFT_MAX">11</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NFFT_MAX">9</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ARCH</spirit:name>
@@ -1354,7 +1354,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_BRAM_STAGES</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRAM_STAGES">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BRAM_STAGES">2</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_REORDER_MEM_TYPE</spirit:name>
@@ -1412,12 +1412,12 @@
       <spirit:enumeration>65536</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_8876e5e9</spirit:name>
+      <spirit:name>choice_list_7a91b114</spirit:name>
+      <spirit:enumeration>0</spirit:enumeration>
+      <spirit:enumeration>1</spirit:enumeration>
       <spirit:enumeration>2</spirit:enumeration>
       <spirit:enumeration>3</spirit:enumeration>
       <spirit:enumeration>4</spirit:enumeration>
-      <spirit:enumeration>5</spirit:enumeration>
-      <spirit:enumeration>6</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_c6ed4a00</spirit:name>
@@ -2063,11 +2063,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>transform_length</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.transform_length" spirit:choiceRef="choice_list_769cfb1f" spirit:order="3">2048</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.transform_length" spirit:choiceRef="choice_list_769cfb1f" spirit:order="3">512</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>target_clock_frequency</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_clock_frequency" spirit:order="4" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">100</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_clock_frequency" spirit:order="4" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">50</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>implementation_options</spirit:name>
@@ -2075,7 +2075,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>target_data_throughput</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_data_throughput" spirit:order="6" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">100</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.target_data_throughput" spirit:order="6" spirit:minimum="1" spirit:maximum="1000" spirit:rangeType="long">50</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>run_time_configurable_transform_length</spirit:name>
@@ -2143,7 +2143,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>number_of_stages_using_block_ram_for_data_and_phase_factors</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.number_of_stages_using_block_ram_for_data_and_phase_factors" spirit:choiceRef="choice_list_8876e5e9" spirit:order="23">4</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.number_of_stages_using_block_ram_for_data_and_phase_factors" spirit:choiceRef="choice_list_7a91b114" spirit:order="23">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>memory_options_hybrid</spirit:name>

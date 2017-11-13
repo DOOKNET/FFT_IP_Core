@@ -6,7 +6,7 @@ module FFT_Control(
 );
 
 //-------input-----------//
-reg     [15:0]  s_axis_config_tdata = 16'b00001010_00000001;		//FWD_INV=1;Padding=0;CP_LEN=1000000;Padding=000;NFFT=5'b00011 ; 00000001_00000011
+reg     [15:0]  s_axis_config_tdata = 16'b00000001_00001001;		//FWD_INV=1;Padding=0;CP_LEN=1000000;Padding=000;NFFT=5'b01001 ;
 reg     [31:0]  s_axis_data_tdata;
 reg     s_axis_config_tvalid = 0;
 reg     s_axis_data_tvalid = 1;
