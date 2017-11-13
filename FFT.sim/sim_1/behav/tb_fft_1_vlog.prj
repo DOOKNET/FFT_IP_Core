@@ -1,6 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  "../../../Design/Code/FFT_Control.v"
-verilog xil_defaultlib  "../../../TestBeach/tb_fft.v"
+verilog xil_defaultlib  "../../../TestBeach/tb_fft_1.v"
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

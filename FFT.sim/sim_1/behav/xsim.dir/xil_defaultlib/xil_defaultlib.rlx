@@ -2,7 +2,6 @@
 2016.4
 Dec 14 2016
 22:58:16
-E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v,1510584893,verilog,,,,FFT_Control,,,,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd,1510556818,vhdl,,,,fft,,,,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
-E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft.v,1510580985,verilog,,,,TB_readfile,,,,,,,,
+E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_1.v,1510591629,verilog,,,,tb_fft_1,,,,,,,,

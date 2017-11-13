@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Mon Nov 13 18:57:51 2017
+| Date         : Tue Nov 14 00:06:49 2017
 | Host         : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FFT_Control_utilization_synth.rpt -pb FFT_Control_utilization_synth.pb
 | Design       : FFT_Control
@@ -146,9 +146,8 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| OBUF     |   28 |                  IO |
 | IBUF     |   15 |                  IO |
-| OBUFT    |   14 |                  IO |
-| OBUF     |   14 |                  IO |
 | FDRE     |   14 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module TB_readfile();
+module tb_fft();
 reg     SCLK;
 reg     signed  [13:0]  data_out;
 //------------------------------------//
