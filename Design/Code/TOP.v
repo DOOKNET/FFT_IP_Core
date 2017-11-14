@@ -12,12 +12,6 @@ test_wave       test_wave_inst0(
     .data_out   (data_out_reg)
 );
 //--------------------------------//
-FFT_Control         FFT_Control_inst1(
-    .sclk           (sclk),
-    .data_in        (data_out_reg),
-    .data_out_re    (data_re),
-    .data_out_im    (data_im)
-);
 
 
 endmodule 

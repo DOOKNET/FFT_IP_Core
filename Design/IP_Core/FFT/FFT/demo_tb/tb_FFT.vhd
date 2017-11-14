@@ -93,7 +93,7 @@ architecture tb of tb_FFT is
   -- Config slave channel signals
   signal s_axis_config_tvalid        : std_logic := '0';  -- payload is valid
   signal s_axis_config_tready        : std_logic := '1';  -- slave is ready
-  signal s_axis_config_tdata         : std_logic_vector(15 downto 0) := (others => '0');  -- data payload
+  signal s_axis_config_tdata         : std_logic_vector(23 downto 0) := (others => '0');  -- data payload
 
   -- Data slave channel signals
   signal s_axis_data_tvalid          : std_logic := '0';  -- payload is valid
@@ -105,19 +105,13 @@ architecture tb of tb_FFT is
   signal m_axis_data_tvalid          : std_logic := '0';  -- payload is valid
   signal m_axis_data_tready          : std_logic := '1';  -- slave is ready
   signal m_axis_data_tdata           : std_logic_vector(31 downto 0) := (others => '0');  -- data payload
-  signal m_axis_data_tuser           : std_logic_vector(23 downto 0) := (others => '0');  -- user-defined payload
+  signal m_axis_data_tuser           : std_logic_vector(15 downto 0) := (others => '0');  -- user-defined payload
   signal m_axis_data_tlast           : std_logic := '0';  -- indicates end of packet
-
-  -- Status master channel signals
-  signal m_axis_status_tvalid        : std_logic := '0';  -- payload is valid
-  signal m_axis_status_tready        : std_logic := '1';  -- slave is ready
-  signal m_axis_status_tdata         : std_logic_vector(7 downto 0) := (others => '0');  -- data payload
 
   -- Event signals
   signal event_frame_started         : std_logic := '0';
   signal event_tlast_unexpected      : std_logic := '0';
   signal event_tlast_missing         : std_logic := '0';
-  signal event_fft_overflow          : std_logic := '0';
   signal event_status_channel_halt   : std_logic := '0';
   signal event_data_in_channel_halt  : std_logic := '0';
   signal event_data_out_channel_halt : std_logic := '0';
@@ -131,7 +125,7 @@ architecture tb of tb_FFT is
 
   -- Config slave channel alias signals
   signal s_axis_config_tdata_fwd_inv      : std_logic                    := '0';              -- forward or inverse
-  signal s_axis_config_tdata_scale_sch    : std_logic_vector(9 downto 0) := (others => '0');  -- scaling schedule
+  signal s_axis_config_tdata_scale_sch    : std_logic_vector(17 downto 0) := (others => '0');  -- scaling schedule
 
   -- Data slave channel alias signals
   signal s_axis_data_tdata_re             : std_logic_vector(13 downto 0) := (others => '0');  -- real data
@@ -141,10 +135,6 @@ architecture tb of tb_FFT is
   signal m_axis_data_tdata_re             : std_logic_vector(13 downto 0) := (others => '0');  -- real data
   signal m_axis_data_tdata_im             : std_logic_vector(13 downto 0) := (others => '0');  -- imaginary data
   signal m_axis_data_tuser_xk_index       : std_logic_vector(8 downto 0) := (others => '0');  -- sample index
-  signal m_axis_data_tuser_ovflo          : std_logic := '0';  -- overflow
-
-  -- Status master channel alias signals
-  signal m_axis_status_tdata_ovflo        : std_logic := '0';  -- overflow
 
   -----------------------------------------------------------------------
   -- Constants, types and functions to create input data
@@ -232,13 +222,9 @@ begin
       m_axis_data_tdata           => m_axis_data_tdata,
       m_axis_data_tuser           => m_axis_data_tuser,
       m_axis_data_tlast           => m_axis_data_tlast,
-      m_axis_status_tvalid        => m_axis_status_tvalid,
-      m_axis_status_tready        => m_axis_status_tready,
-      m_axis_status_tdata         => m_axis_status_tdata,
       event_frame_started         => event_frame_started,
       event_tlast_unexpected      => event_tlast_unexpected,
       event_tlast_missing         => event_tlast_missing,
-      event_fft_overflow          => event_fft_overflow,
       event_status_channel_halt   => event_status_channel_halt,
       event_data_in_channel_halt  => event_data_in_channel_halt,
       event_data_out_channel_halt => event_data_out_channel_halt
@@ -461,7 +447,7 @@ begin
   -----------------------------------------------------------------------
 
   config_stimuli : process
-    variable scale_sch : std_logic_vector(9 downto 0);
+    variable scale_sch : std_logic_vector(17 downto 0);
   begin
 
     -- Drive a configuration when requested by data_stimuli process
@@ -491,13 +477,12 @@ begin
     if cfg_scale_sch = ZERO then  -- no scaling
       scale_sch := (others => '0');
     elsif cfg_scale_sch = DEFAULT then  -- default scaling, for largest magnitude output with no overflow guaranteed
-      scale_sch(1 downto 0) := "11";  -- largest scaling at first stage
-      for s in 2 to 4 loop
-        scale_sch(s*2-1 downto s*2-2) := "10";  -- less scaling at later stages
+      scale_sch(1 downto 0) := "10";  -- largest scaling at first stage
+      for s in 2 to 9 loop
+        scale_sch(s*2-1 downto s*2-2) := "01";  -- less scaling at later stages
       end loop;
-      scale_sch(9 downto 8) := "01";  -- least scaling at last stage
     end if;
-    s_axis_config_tdata(10 downto 1) <= scale_sch;
+    s_axis_config_tdata(18 downto 1) <= scale_sch;
 
     -- Drive the transaction on the config slave channel
     s_axis_config_tvalid <= '1';
@@ -546,11 +531,7 @@ begin
     variable m_data_tvalid_prev : std_logic := '0';
     variable m_data_tready_prev : std_logic := '0';
     variable m_data_tdata_prev  : std_logic_vector(31 downto 0) := (others => '0');
-    variable m_data_tuser_prev  : std_logic_vector(23 downto 0) := (others => '0');
-    -- Previous values of status master channel signals
-    variable m_status_tvalid_prev : std_logic := '0';
-    variable m_status_tready_prev : std_logic := '0';
-    variable m_status_tdata_prev  : std_logic_vector(7 downto 0) := (others => '0');
+    variable m_data_tuser_prev  : std_logic_vector(15 downto 0) := (others => '0');
   begin
 
     -- Check outputs T_STROBE time after rising edge of clock
@@ -559,7 +540,7 @@ begin
 
     -- Do not check the output payload values, as this requires a numerical model
     -- which would make this demonstration testbench unwieldy.
-    -- Instead, check the protocol of the data and status master channels:
+    -- Instead, check the protocol of the data master channel:
     -- check that the payload is valid (not X) when TVALID is high
     -- and check that the payload does not change while TVALID is high until TREADY goes high
 
@@ -586,21 +567,6 @@ begin
 
     end if;
 
-    if m_axis_status_tvalid = '1' then
-      if is_x(m_axis_status_tdata) then
-        report "ERROR: m_axis_status_tdata is invalid when m_axis_status_tvalid is high" severity error;
-        check_ok := false;
-      end if;
-
-      if m_status_tvalid_prev = '1' and m_status_tready_prev = '0' then  -- payload must be the same as last cycle
-        if m_axis_status_tdata /= m_status_tdata_prev then
-          report "ERROR: m_axis_status_tdata changed while m_axis_status_tvalid was high and m_axis_status_tready was low" severity error;
-          check_ok := false;
-        end if;
-      end if;
-
-    end if;
-
     assert check_ok
       report "ERROR: terminating test with failures." severity failure;
 
@@ -610,9 +576,6 @@ begin
       m_data_tready_prev  := m_axis_data_tready;
       m_data_tdata_prev   := m_axis_data_tdata;
       m_data_tuser_prev   := m_axis_data_tuser;
-      m_status_tvalid_prev := m_axis_status_tvalid;
-      m_status_tready_prev := m_axis_status_tready;
-      m_status_tdata_prev  := m_axis_status_tdata;
     end if;
 
   end process check_outputs;
@@ -623,7 +586,7 @@ begin
 
   -- Config slave channel alias signals
   s_axis_config_tdata_fwd_inv    <= s_axis_config_tdata(0);
-  s_axis_config_tdata_scale_sch  <= s_axis_config_tdata(10 downto 1);
+  s_axis_config_tdata_scale_sch  <= s_axis_config_tdata(18 downto 1);
 
   -- Data slave channel alias signals
   s_axis_data_tdata_re           <= s_axis_data_tdata(13 downto 0);
@@ -633,10 +596,6 @@ begin
   m_axis_data_tdata_re           <= m_axis_data_tdata(13 downto 0);
   m_axis_data_tdata_im           <= m_axis_data_tdata(29 downto 16);
   m_axis_data_tuser_xk_index     <= m_axis_data_tuser(8 downto 0);
-  m_axis_data_tuser_ovflo        <= m_axis_data_tuser(16);
-
-  -- Status master channel alias signals
-  m_axis_status_tdata_ovflo      <= m_axis_status_tdata(0);
 
 end tb;
 
