@@ -1,10 +1,12 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_2_behav xil_defaultlib.tb_fft_2 xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_3_behav xil_defaultlib.tb_fft_3 xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v" Line 1. Module FFT_Control_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v" Line 1. Module FFT_Control_3 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
@@ -184,7 +186,7 @@ Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_core [\xfft_v9_
 Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_viv [\xfft_v9_0_11_viv(c_xdevicefamil...]
 Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11 [\xfft_v9_0_11(c_xdevicefamily="a...]
 Compiling architecture fft_arch of entity xil_defaultlib.FFT [fft_default]
-Compiling module xil_defaultlib.FFT_Control_2
-Compiling module xil_defaultlib.tb_fft_2
+Compiling module xil_defaultlib.FFT_Control_3
+Compiling module xil_defaultlib.tb_fft_3
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_fft_2_behav
+Built simulation snapshot tb_fft_3_behav
