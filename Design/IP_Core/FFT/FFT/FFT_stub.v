@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Wed Nov 15 01:25:27 2017
+// Date        : Thu Nov 16 00:24:22 2017
 // Host        : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT_stub.v

@@ -8,14 +8,16 @@ module FFT_Control_3(
     output  m_axis_data_tvalid          //输出数据有效信号
 );
 //---------------输入信号-------------//
-reg     [9:0]   cnt = 0;    //计数器
+reg     [10:0]   cnt = 0;    //计数器
 reg     cnt_en = 0;             //计数器使能信号
+reg     s_axis_config_tdata = 8'd1;
 reg     s_axis_config_tvalid = 0;
 reg     s_axis_data_tvalid = 0;
 reg     s_axis_data_tlast = 0;
+reg     m_axis_data_tready = 1;
 //---------------输出信号-------------//
-wire[63 : 0]  m_axis_data_tdata;    //fft ip核处理后的数据，其中高32位为虚部，低32位为实部信号
-wire    event_frame_started;        //表明fft 开始处理一帧数据
+wire    [63 : 0]  m_axis_data_tdata;    //fft ip核处理后的数据，其中高32位为虚部，低32位为实部信号
+wire    event_frame_started;            //表明fft 开始处理一帧数据
 wire    event_tlast_unexpected ;    
 wire    event_tlast_missing;
 wire    event_data_in_channel_halt;
@@ -63,7 +65,7 @@ always @(posedge clk) begin
     if(data_tready_pose == 1)   begin
         cnt_en <= 1;
     end
-    else if(cnt == 10'd512) begin
+    else if(cnt == 11'd1024) begin      /*需要改动*/
         cnt_en <= 0;
     end
 end
@@ -78,7 +80,7 @@ always @(posedge clk) begin
 end
 //----------------------设置tlast信号-----------------------//
 always @(posedge clk) begin
-    if(cnt == 10'd510)  begin
+    if(cnt == 11'd1024)  begin      /*需要改动*/
         s_axis_data_tlast <= 1;     //输入最后一个数据时，tlast信号产生一个脉冲
     end
     else    begin
@@ -89,7 +91,7 @@ end
       
 FFT                             FFT_inst0(
     .aclk                       (clk),                                              
-    .s_axis_config_tdata        (8'd1),                              
+    .s_axis_config_tdata        (s_axis_config_tdata),                              
     .s_axis_config_tvalid       (s_axis_config_tvalid),             
     .s_axis_config_tready       (s_axis_config_tready),             
     .s_axis_data_tdata          (s_axis_data_tdata),                   
@@ -99,7 +101,7 @@ FFT                             FFT_inst0(
     .m_axis_data_tdata          (m_axis_data_tdata),                   
     .m_axis_data_tuser          (m_axis_data_tuser),                   
     .m_axis_data_tvalid         (m_axis_data_tvalid),                 
-    .m_axis_data_tready         (1'b1),                               
+    .m_axis_data_tready         (m_axis_data_tready),                               
     .m_axis_data_tlast          (m_axis_data_tlast),                   
     .event_frame_started        (event_frame_started),               
     .event_tlast_unexpected     (event_tlast_unexpected),         
@@ -111,4 +113,5 @@ FFT                             FFT_inst0(
 
 assign data_out_re=m_axis_data_tdata[31:0];//低32位为实部信号
 assign data_out_im=m_axis_data_tdata[63:32]; // 高32位为虚部，
-endmodule // FFT_Control_   
+endmodule 
+  

@@ -127,20 +127,20 @@ architecture tb of tb_FFT is
   signal s_axis_config_tdata_fwd_inv      : std_logic                    := '0';              -- forward or inverse
 
   -- Data slave channel alias signals
-  signal s_axis_data_tdata_re             : std_logic_vector(15 downto 0) := (others => '0');  -- real data
-  signal s_axis_data_tdata_im             : std_logic_vector(15 downto 0) := (others => '0');  -- imaginary data
+  signal s_axis_data_tdata_re             : std_logic_vector(13 downto 0) := (others => '0');  -- real data
+  signal s_axis_data_tdata_im             : std_logic_vector(13 downto 0) := (others => '0');  -- imaginary data
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_re             : std_logic_vector(25 downto 0) := (others => '0');  -- real data
-  signal m_axis_data_tdata_im             : std_logic_vector(25 downto 0) := (others => '0');  -- imaginary data
-  signal m_axis_data_tuser_xk_index       : std_logic_vector(8 downto 0) := (others => '0');  -- sample index
+  signal m_axis_data_tdata_re             : std_logic_vector(24 downto 0) := (others => '0');  -- real data
+  signal m_axis_data_tdata_im             : std_logic_vector(24 downto 0) := (others => '0');  -- imaginary data
+  signal m_axis_data_tuser_xk_index       : std_logic_vector(9 downto 0) := (others => '0');  -- sample index
 
   -----------------------------------------------------------------------
   -- Constants, types and functions to create input data
   -----------------------------------------------------------------------
 
-  constant IP_WIDTH    : integer := 16;
-  constant MAX_SAMPLES : integer := 2**9;  -- maximum number of samples in a frame
+  constant IP_WIDTH    : integer := 14;
+  constant MAX_SAMPLES : integer := 2**10;  -- maximum number of samples in a frame
   type T_IP_SAMPLE is record
     re : std_logic_vector(IP_WIDTH-1 downto 0);
     im : std_logic_vector(IP_WIDTH-1 downto 0);
@@ -162,7 +162,7 @@ architecture tb of tb_FFT is
     variable im_real : real;
     variable re_int : integer;
     variable im_int : integer;
-    constant DATA_WIDTH : integer := 14;
+    constant DATA_WIDTH : integer := 12;
   begin
     for i in 0 to MAX_SAMPLES-1 loop
       theta   := real(i) / real(MAX_SAMPLES) * 2.6 * 2.0 * MATH_PI;
@@ -299,8 +299,10 @@ begin
       index  := 0;
       while index < data'length loop
         -- Look up sample data in data table, construct TDATA value
-        sample_data(15 downto 0)  := data(index).re;                  -- real data
-        sample_data(31 downto 16) := data(index).im;                  -- imaginary data
+        sample_data(13 downto 0)  := data(index).re;                  -- real data
+        sample_data(15 downto 14) := (others => data(index).re(13));  -- sign-extend
+        sample_data(29 downto 16) := data(index).im;                  -- imaginary data
+        sample_data(31 downto 30) := (others => data(index).im(13));  -- sign-extend
         -- Construct TLAST's value
         index := index + 1;
         if index >= data'length then
@@ -490,10 +492,10 @@ begin
       if m_axis_data_tvalid = '1' and m_axis_data_tready = '1' then
         -- Record output data such that it can be used as input data
         -- Output sample index is given by xk_index field of m_axis_data_tuser
-        index := to_integer(unsigned(m_axis_data_tuser(8 downto 0)));
+        index := to_integer(unsigned(m_axis_data_tuser(9 downto 0)));
         -- Truncate output data to match input data width
-        op_data(index).re <= m_axis_data_tdata(25 downto 10);
-        op_data(index).im <= m_axis_data_tdata(57 downto 42);
+        op_data(index).re <= m_axis_data_tdata(24 downto 11);
+        op_data(index).im <= m_axis_data_tdata(56 downto 43);
         -- Track the number of output frames
         if m_axis_data_tlast = '1' then  -- end of output frame: increment frame counter
           op_frame <= op_frame + 1;
@@ -569,13 +571,13 @@ begin
   s_axis_config_tdata_fwd_inv    <= s_axis_config_tdata(0);
 
   -- Data slave channel alias signals
-  s_axis_data_tdata_re           <= s_axis_data_tdata(15 downto 0);
-  s_axis_data_tdata_im           <= s_axis_data_tdata(31 downto 16);
+  s_axis_data_tdata_re           <= s_axis_data_tdata(13 downto 0);
+  s_axis_data_tdata_im           <= s_axis_data_tdata(29 downto 16);
 
   -- Data master channel alias signals
-  m_axis_data_tdata_re           <= m_axis_data_tdata(25 downto 0);
-  m_axis_data_tdata_im           <= m_axis_data_tdata(57 downto 32);
-  m_axis_data_tuser_xk_index     <= m_axis_data_tuser(8 downto 0);
+  m_axis_data_tdata_re           <= m_axis_data_tdata(24 downto 0);
+  m_axis_data_tdata_im           <= m_axis_data_tdata(56 downto 32);
+  m_axis_data_tuser_xk_index     <= m_axis_data_tuser(9 downto 0);
 
 end tb;
 

@@ -1,8 +1,6 @@
 vlib work
 vlib msim
 
-vlib msim/xil_defaultlib
-vlib msim/xpm
 vlib msim/xbip_utils_v3_0_7
 vlib msim/axi_utils_v2_0_3
 vlib msim/c_reg_fd_v12_0_3
@@ -18,9 +16,8 @@ vlib msim/mult_gen_v12_0_12
 vlib msim/cmpy_v6_0_12
 vlib msim/floating_point_v7_0_13
 vlib msim/xfft_v9_0_11
+vlib msim/xil_defaultlib
 
-vmap xil_defaultlib msim/xil_defaultlib
-vmap xpm msim/xpm
 vmap xbip_utils_v3_0_7 msim/xbip_utils_v3_0_7
 vmap axi_utils_v2_0_3 msim/axi_utils_v2_0_3
 vmap c_reg_fd_v12_0_3 msim/c_reg_fd_v12_0_3
@@ -36,12 +33,7 @@ vmap mult_gen_v12_0_12 msim/mult_gen_v12_0_12
 vmap cmpy_v6_0_12 msim/cmpy_v6_0_12
 vmap floating_point_v7_0_13 msim/floating_point_v7_0_13
 vmap xfft_v9_0_11 msim/xfft_v9_0_11
-
-vlog -work xil_defaultlib -64 -sv \
-"E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
-
-vcom -work xpm -64 -93 \
-"E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_VCOMP.vhd" \
+vmap xil_defaultlib msim/xil_defaultlib
 
 vcom -work xbip_utils_v3_0_7 -64 -93 \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -91,6 +83,4 @@ vcom -work xfft_v9_0_11 -64 -93 \
 vcom -work xil_defaultlib -64 -93 \
 "../../../../Design/IP_Core/FFT/FFT/sim/FFT.vhd" \
 
-
-vlog -work xil_defaultlib "glbl.v"
 

@@ -1,8 +1,6 @@
 vlib work
 vlib activehdl
 
-vlib activehdl/xil_defaultlib
-vlib activehdl/xpm
 vlib activehdl/xbip_utils_v3_0_7
 vlib activehdl/axi_utils_v2_0_3
 vlib activehdl/c_reg_fd_v12_0_3
@@ -18,9 +16,8 @@ vlib activehdl/mult_gen_v12_0_12
 vlib activehdl/cmpy_v6_0_12
 vlib activehdl/floating_point_v7_0_13
 vlib activehdl/xfft_v9_0_11
+vlib activehdl/xil_defaultlib
 
-vmap xil_defaultlib activehdl/xil_defaultlib
-vmap xpm activehdl/xpm
 vmap xbip_utils_v3_0_7 activehdl/xbip_utils_v3_0_7
 vmap axi_utils_v2_0_3 activehdl/axi_utils_v2_0_3
 vmap c_reg_fd_v12_0_3 activehdl/c_reg_fd_v12_0_3
@@ -36,12 +33,7 @@ vmap mult_gen_v12_0_12 activehdl/mult_gen_v12_0_12
 vmap cmpy_v6_0_12 activehdl/cmpy_v6_0_12
 vmap floating_point_v7_0_13 activehdl/floating_point_v7_0_13
 vmap xfft_v9_0_11 activehdl/xfft_v9_0_11
-
-vlog -work xil_defaultlib  -sv2k12 \
-"E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
-
-vcom -work xpm -93 \
-"E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_VCOMP.vhd" \
+vmap xil_defaultlib activehdl/xil_defaultlib
 
 vcom -work xbip_utils_v3_0_7 -93 \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -91,6 +83,4 @@ vcom -work xfft_v9_0_11 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../../Design/IP_Core/FFT/FFT/sim/FFT.vhd" \
 
-
-vlog -work xil_defaultlib "glbl.v"
 
