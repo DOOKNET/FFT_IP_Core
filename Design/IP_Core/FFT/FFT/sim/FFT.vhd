@@ -59,14 +59,14 @@ USE xfft_v9_0_11.xfft_v9_0_11;
 ENTITY FFT IS
   PORT (
     aclk : IN STD_LOGIC;
-    s_axis_config_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    s_axis_config_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axis_config_tvalid : IN STD_LOGIC;
     s_axis_config_tready : OUT STD_LOGIC;
     s_axis_data_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axis_data_tvalid : IN STD_LOGIC;
     s_axis_data_tready : OUT STD_LOGIC;
     s_axis_data_tlast : IN STD_LOGIC;
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
     m_axis_data_tuser : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     m_axis_data_tvalid : OUT STD_LOGIC;
     m_axis_data_tready : IN STD_LOGIC;
@@ -123,14 +123,14 @@ ARCHITECTURE FFT_arch OF FFT IS
       aclk : IN STD_LOGIC;
       aclken : IN STD_LOGIC;
       aresetn : IN STD_LOGIC;
-      s_axis_config_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      s_axis_config_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       s_axis_config_tvalid : IN STD_LOGIC;
       s_axis_config_tready : OUT STD_LOGIC;
       s_axis_data_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       s_axis_data_tvalid : IN STD_LOGIC;
       s_axis_data_tready : OUT STD_LOGIC;
       s_axis_data_tlast : IN STD_LOGIC;
-      m_axis_data_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      m_axis_data_tdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
       m_axis_data_tuser : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       m_axis_data_tvalid : OUT STD_LOGIC;
       m_axis_data_tready : IN STD_LOGIC;
@@ -171,9 +171,9 @@ BEGIN
   U0 : xfft_v9_0_11
     GENERIC MAP (
       C_XDEVICEFAMILY => "artix7",
-      C_S_AXIS_CONFIG_TDATA_WIDTH => 24,
+      C_S_AXIS_CONFIG_TDATA_WIDTH => 8,
       C_S_AXIS_DATA_TDATA_WIDTH => 32,
-      C_M_AXIS_DATA_TDATA_WIDTH => 32,
+      C_M_AXIS_DATA_TDATA_WIDTH => 64,
       C_M_AXIS_DATA_TUSER_WIDTH => 16,
       C_M_AXIS_STATUS_TDATA_WIDTH => 1,
       C_THROTTLE_SCHEME => 1,
@@ -182,10 +182,10 @@ BEGIN
       C_ARCH => 2,
       C_HAS_NFFT => 0,
       C_USE_FLT_PT => 0,
-      C_INPUT_WIDTH => 14,
-      C_TWIDDLE_WIDTH => 14,
-      C_OUTPUT_WIDTH => 14,
-      C_HAS_SCALING => 1,
+      C_INPUT_WIDTH => 16,
+      C_TWIDDLE_WIDTH => 16,
+      C_OUTPUT_WIDTH => 26,
+      C_HAS_SCALING => 0,
       C_HAS_BFP => 0,
       C_HAS_ROUNDING => 0,
       C_HAS_ACLKEN => 0,

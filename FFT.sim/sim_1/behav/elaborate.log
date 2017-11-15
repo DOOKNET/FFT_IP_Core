@@ -1,6 +1,6 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_1_behav xil_defaultlib.tb_fft_1 xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_2_behav xil_defaultlib.tb_fft_2 xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -41,14 +41,14 @@ Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
 Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
 Compiling package ieee.std_logic_textio
 Compiling package mult_gen_v12_0_12.dsp_pkg
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=19,has_uvpro...]
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=19,has_uvpr...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=1,has_uvpro...]
 Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=29,has_uvpro...]
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=29,has_uvpr...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=33,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=33,has_uvpr...]
 Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=38,has_uvpro...]
-Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_master [\glb_ifx_master(width=38,afull_t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=62,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_master [\glb_ifx_master(width=62,afull_t...]
 Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
 Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper [\axi_wrapper(c_nfft_max=9,c_has_...]
 Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
@@ -58,22 +58,29 @@ Compiling architecture xilinx of entity xfft_v9_0_11.dpm [\dpm(c_xdevicefamily="
 Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
 Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
 Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
-Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
-Compiling architecture xilinx of entity xfft_v9_0_11.arith_shift3 [\arith_shift3(c_xdevicefamily="a...]
 Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
 Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,alumodereg=0...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
-Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=15,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,a_input="C...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=18,bi_width=...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.dsp [\dsp(c_xdevicefamily="artix7",c_...]
 Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=2...]
-Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(bi_width=14,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,alumodereg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,a_input="C...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=17,bi_width=...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.dsp [\dsp(c_xdevicefamily="artix7",c_...]
 Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.dsp [\dsp(c_xdevicefamily="artix7",c_...]
@@ -84,7 +91,7 @@ Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_x
 Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="a...]
 Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_v6_0_12_synth [\cmpy_v6_0_12_synth(c_xdevicefam...]
 Compiling architecture xilinx of entity xfft_v9_0_11.cmpy [\cmpy(c_xdevicefamily="artix7",a...]
-Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=19...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=31...]
 Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
@@ -177,6 +184,7 @@ Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_core [\xfft_v9_
 Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_viv [\xfft_v9_0_11_viv(c_xdevicefamil...]
 Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11 [\xfft_v9_0_11(c_xdevicefamily="a...]
 Compiling architecture fft_arch of entity xil_defaultlib.FFT [fft_default]
-Compiling module xil_defaultlib.tb_fft_1
+Compiling module xil_defaultlib.FFT_Control_2
+Compiling module xil_defaultlib.tb_fft_2
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_fft_1_behav
+Built simulation snapshot tb_fft_2_behav

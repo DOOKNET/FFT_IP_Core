@@ -1,4 +1,8 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_fft_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Control_2
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_2.v:112]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft_2
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_2.v:35]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

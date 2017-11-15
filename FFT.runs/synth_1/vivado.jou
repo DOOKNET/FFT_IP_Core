@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 15 01:31:40 2017
+# Process ID: 19168
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1
+# Command line: vivado.exe -log FFT_Control_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Control_2.tcl
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/FFT_Control_2.vds
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT_Control_2.tcl -notrace

@@ -56,14 +56,14 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 FFT your_instance_name (
   .aclk(aclk),                                                // input wire aclk
-  .s_axis_config_tdata(s_axis_config_tdata),                  // input wire [23 : 0] s_axis_config_tdata
+  .s_axis_config_tdata(s_axis_config_tdata),                  // input wire [7 : 0] s_axis_config_tdata
   .s_axis_config_tvalid(s_axis_config_tvalid),                // input wire s_axis_config_tvalid
   .s_axis_config_tready(s_axis_config_tready),                // output wire s_axis_config_tready
   .s_axis_data_tdata(s_axis_data_tdata),                      // input wire [31 : 0] s_axis_data_tdata
   .s_axis_data_tvalid(s_axis_data_tvalid),                    // input wire s_axis_data_tvalid
   .s_axis_data_tready(s_axis_data_tready),                    // output wire s_axis_data_tready
   .s_axis_data_tlast(s_axis_data_tlast),                      // input wire s_axis_data_tlast
-  .m_axis_data_tdata(m_axis_data_tdata),                      // output wire [31 : 0] m_axis_data_tdata
+  .m_axis_data_tdata(m_axis_data_tdata),                      // output wire [63 : 0] m_axis_data_tdata
   .m_axis_data_tuser(m_axis_data_tuser),                      // output wire [15 : 0] m_axis_data_tuser
   .m_axis_data_tvalid(m_axis_data_tvalid),                    // output wire m_axis_data_tvalid
   .m_axis_data_tready(m_axis_data_tready),                    // input wire m_axis_data_tready
