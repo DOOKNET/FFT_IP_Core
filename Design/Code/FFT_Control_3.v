@@ -5,7 +5,8 @@ module FFT_Control_3(
     output  s_axis_data_tready,         //IP Core准备接收数据信号
     output  [31:0]  data_out_re,
     output  [31:0]  data_out_im,
-    output  m_axis_data_tvalid          //输出数据有效信号
+    output  m_axis_data_tvalid,          //输出数据有效信号
+    output  [15:0]  m_axis_data_tuser           //输出数据计数
 );
 //---------------输入信号-------------//
 reg     [10:0]   cnt = 0;    //计数器
@@ -22,7 +23,7 @@ wire    event_tlast_unexpected ;
 wire    event_tlast_missing;
 wire    event_data_in_channel_halt;
 wire    event_data_out_channel_halt;       
-wire    [15:0] m_axis_data_tuser;
+//wire    [15:0] m_axis_data_tuser;
 wire    event_status_channel_halt;     
 
 /*
