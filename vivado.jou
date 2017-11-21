@@ -11,3 +11,8 @@
 #-----------------------------------------------------------
 start_gui
 open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
+launch_simulation
+source tb_fft_3.tcl
+run 100 us
+run 100 us
+run 100 us
