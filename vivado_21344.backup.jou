@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Nov 17 13:12:59 2017
+# Process ID: 21344
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12416 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr

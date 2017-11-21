@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Nov 17 15:03:31 2017
+# Process ID: 5608
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18964 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 819.699 ; gain = 161.723
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name RAM -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {14} CONFIG.Write_Depth_A {1024} CONFIG.Read_Width_A {14} CONFIG.Write_Width_B {14} CONFIG.Read_Width_B {14} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips RAM]
+generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM'...
+generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM'...
+catch { config_ip_cache -export [get_ips -all RAM] }
+export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci]
+launch_runs -jobs 4 RAM_synth_1
+[Fri Nov 17 15:14:16 2017] Launched RAM_synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/RAM_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/fft_file.txt
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/fft_im_file.txt
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_fft_3' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/ROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/cos_14_1024_signed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_fft_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Control_3
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v:106]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_fft_3_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FFT
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_3_behav xil_defaultlib.tb_fft_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_config_tdata [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v" Line 1. Module FFT_Control_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v" Line 1. Module FFT_Control_3 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_12.cmpy_v6_0_12_pkg
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_consts
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_exp_table...
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_pkg
+Compiling package xfft_v9_0_11.pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_axi_pkg
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_pkg
+Compiling package c_mux_bit_v12_0_3.c_mux_bit_v12_0_3_viv_comp
+Compiling package c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xfft_v9_0_11.half_sincos_tw_table
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package ieee.std_logic_textio
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=1,has_uvpro...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=29,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=29,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=61,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_master [\glb_ifx_master(width=61,afull_t...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper [\axi_wrapper(c_nfft_max=10,c_has...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,ram_mode="SD...]
+Compiling architecture ramb18sdp_v of entity unisim.RAMB18SDP [\RAMB18SDP(do_reg=1,sim_collisio...]
+Compiling architecture xilinx of entity xfft_v9_0_11.dpm [\dpm(c_xdevicefamily="artix7",wi...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,carryinselreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,areg...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=25,bi_width=...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1957]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1958]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1959]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48_mult [\cmpy_4_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48 [\cmpy_4_dsp48(c_xdevicefamily="a...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_v6_0_12_synth [\cmpy_v6_0_12_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cmpy [\cmpy(c_xdevicefamily="artix7",a...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=30...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.adder [\adder(c_xdevicefamily="artix7",...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.subtracter [\subtracter(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.butterfly [\butterfly(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_pe [\r2_pe(c_xdevicefamily="artix7",...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_datapath [\r2_datapath(c_xdevicefamily="ar...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus16 [\mux_bus16(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=10)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_in_addr [\r2_in_addr(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=9)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_rw_addr [\r2_rw_addr(c_xdevicefamily="art...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001010")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.twgen_half_sincos [\twgen_half_sincos(c_xdevicefami...]
+Compiling architecture xilinx of entity xfft_v9_0_11.twiddle_gen [\twiddle_gen(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus16 [\mux_bus16(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_tw_addr [\r2_tw_addr(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.reg_rs_rtl [reg_rs_rtl_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.flow_control_c [\flow_control_c(c_xdevicefamily=...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_sync_pri...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r2_control [\r2_control(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11_c [\xfft_v9_0_11_c(c_xdevicefamily=...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_core [\xfft_v9_0_11_core(c_xdevicefami...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_viv [\xfft_v9_0_11_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11 [\xfft_v9_0_11(c_xdevicefamily="a...]
+Compiling architecture fft_arch of entity xil_defaultlib.FFT [fft_default]
+Compiling module xil_defaultlib.FFT_Control_3
+Compiling module xil_defaultlib.tb_fft_3
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fft_3_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:00 . Memory (MB): peak = 1006.938 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '60' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft_3_behav -key {Behavioral:sim_1:Functional:tb_fft_3} -tclbatch {tb_fft_3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_fft_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/sin_data.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:01:06 . Memory (MB): peak = 1051.348 ; gain = 44.410
+run 50 us
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1066.340 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 50 us
+run 50 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 18 17:32:43 2017...

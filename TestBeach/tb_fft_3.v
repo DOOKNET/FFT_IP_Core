@@ -30,7 +30,7 @@ s_axis_data_tdata = 0;
 #100
 $readmemb("E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/sin_data.txt",data);
     for (i=0;i<1024;i=i+1 ) begin
-        s_axis_data_tdata[15:0] = data[i];
+        s_axis_data_tdata[13:0] = data[i];
         #10;
     end
 //#8000;

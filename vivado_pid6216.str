@@ -1,0 +1,88 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 6216
+
+Current time: 	11/21/17 1:37:19 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/Softwares/Vivado/Vivado/2016.4/tps/win64/jre
+
+User name: 	D.Z.C
+User home directory: C:/Users/D.Z.C
+User working directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: E:/Softwares/Vivado/Vivado
+RDI data directory: E:/Softwares/Vivado/Vivado/2016.4/data
+RDI bin directory: E:/Softwares/Vivado/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/D.Z.C/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/D.Z.C/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	229 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 441 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 36 MB (+35043kb) [00:00:05]
+// [Engine Memory]: 401 MB (+269281kb) [00:00:05]
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 76 MB (+40488kb) [00:00:09]
+// [Engine Memory]: 465 MB (+46085kb) [00:00:09]
+// [Engine Memory]: 514 MB (+26590kb) [00:00:09]
+// Tcl Message: open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 41 MB. Current time: 11/21/17 1:37:25 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 805.965 ; gain = 137.777 
+// Project name: FFT; location: E:/Workspace/Vivado_16.4/2017_11_5_FFT; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // y:i (D:JPanel, cd:JFrame)
+// [Engine Memory]: 570 MB (+31821kb) [00:02:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 575 MB. GUI used memory: 38 MB. Current time: 11/21/17 1:39:57 PM CST

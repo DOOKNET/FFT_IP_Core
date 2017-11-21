@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 15 11:38:35 2017
+# Process ID: 4312
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4940 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
+launch_simulation
+source tb_fft_2.tcl
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/tb_fft_2/FFT_Control_2_inst0/clk}} {{/tb_fft_2/FFT_Control_2_inst0/rst}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tready}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/xk_re}} {{/tb_fft_2/FFT_Control_2_inst0/xk_im}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tready}} {{/tb_fft_2/FFT_Control_2_inst0/cnt}} {{/tb_fft_2/FFT_Control_2_inst0/cnt_en}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tlast}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r1}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r2}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/event_frame_started}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_unexpected}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_missing}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_in_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_out_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tuser}} {{/tb_fft_2/FFT_Control_2_inst0/event_status_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tlast}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/tb_fft_2/FFT_Control_2_inst0/clk}} {{/tb_fft_2/FFT_Control_2_inst0/rst}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tready}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/xk_re}} {{/tb_fft_2/FFT_Control_2_inst0/xk_im}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tready}} {{/tb_fft_2/FFT_Control_2_inst0/cnt}} {{/tb_fft_2/FFT_Control_2_inst0/cnt_en}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tlast}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r1}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r2}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/event_frame_started}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_unexpected}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_missing}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_in_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_out_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tuser}} {{/tb_fft_2/FFT_Control_2_inst0/event_status_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tlast}} 
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+add_wave {{/tb_fft_2/FFT_Control_2_inst0/clk}} {{/tb_fft_2/FFT_Control_2_inst0/rst}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tready}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/xk_re}} {{/tb_fft_2/FFT_Control_2_inst0/xk_im}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tready}} {{/tb_fft_2/FFT_Control_2_inst0/cnt}} {{/tb_fft_2/FFT_Control_2_inst0/cnt_en}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_config_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tvalid}} {{/tb_fft_2/FFT_Control_2_inst0/s_axis_data_tlast}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r1}} {{/tb_fft_2/FFT_Control_2_inst0/data_tready_r2}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tdata}} {{/tb_fft_2/FFT_Control_2_inst0/event_frame_started}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_unexpected}} {{/tb_fft_2/FFT_Control_2_inst0/event_tlast_missing}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_in_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/event_data_out_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tuser}} {{/tb_fft_2/FFT_Control_2_inst0/event_status_channel_halt}} {{/tb_fft_2/FFT_Control_2_inst0/m_axis_data_tlast}} 
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_3.v
+remove_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_2.v
+remove_files  -fileset sim_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_fft_2.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_fft_3 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_fft_3.tcl
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run all
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+add_bp {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v} 82
+remove_bps -file {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control_3.v} -line 82
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+set_property -dict [list CONFIG.transform_length {1024} CONFIG.target_clock_frequency {100} CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {20} CONFIG.input_width {14} CONFIG.phase_factor_width {16} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
+generate_target all [get_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
+catch { config_ip_cache -export [get_ips -all FFT] }
+export_ip_user_files -of_objects [get_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -no_script -sync -force -quiet
+reset_run FFT_synth_1
+launch_runs -jobs 4 FFT_synth_1
+export_simulation -of_objects [get_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb_fft_3.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 100 us
+run 50 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/tb_fft_3/FFT_Control_3_inst0/clk}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_data_tdata}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_config_tready}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_data_tready}} {{/tb_fft_3/FFT_Control_3_inst0/data_out_re}} {{/tb_fft_3/FFT_Control_3_inst0/data_out_im}} {{/tb_fft_3/FFT_Control_3_inst0/m_axis_data_tvalid}} {{/tb_fft_3/FFT_Control_3_inst0/cnt}} {{/tb_fft_3/FFT_Control_3_inst0/cnt_en}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_config_tdata}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_config_tvalid}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_data_tvalid}} {{/tb_fft_3/FFT_Control_3_inst0/s_axis_data_tlast}} {{/tb_fft_3/FFT_Control_3_inst0/m_axis_data_tready}} {{/tb_fft_3/FFT_Control_3_inst0/m_axis_data_tdata}} {{/tb_fft_3/FFT_Control_3_inst0/event_frame_started}} {{/tb_fft_3/FFT_Control_3_inst0/event_tlast_unexpected}} {{/tb_fft_3/FFT_Control_3_inst0/event_tlast_missing}} {{/tb_fft_3/FFT_Control_3_inst0/event_data_in_channel_halt}} {{/tb_fft_3/FFT_Control_3_inst0/event_data_out_channel_halt}} {{/tb_fft_3/FFT_Control_3_inst0/m_axis_data_tuser}} {{/tb_fft_3/FFT_Control_3_inst0/event_status_channel_halt}} {{/tb_fft_3/FFT_Control_3_inst0/data_tready_pose}} {{/tb_fft_3/FFT_Control_3_inst0/data_tready_r0}} {{/tb_fft_3/FFT_Control_3_inst0/data_tready_r1}} {{/tb_fft_3/FFT_Control_3_inst0/m_axis_data_tlast}} 
+restart
+run 200 us
+run 100 us
+add_wave {{/tb_fft_3/i}} 
+relaunch_sim
+run 100 us
+run 50 us
+relaunch_sim
+run 50 us
+run 50 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_wave {{/tb_fft_3/data_re}} {{/tb_fft_3/data_im}} {{/tb_fft_3/fft_im_file}} {{/tb_fft_3/fft_im_dataout}} 
+restart
+run 10 us
+run 200 us
+add_wave {{/tb_fft_3/fft_file}} {{/tb_fft_3/fft_dataout}} 
+restart
+run 200 us
+relaunch_sim
+run 50 us
+run 20 us
+restart
+run 50 us
+run 10 us
+run 10 us
+restart
+run 50 us
+run 10 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 20 us
+run 20 us
+run 5 us
+run 5 us
+run 5 us
+run 2 us
+run 2 us
+close_sim
+launch_simulation
+source tb_fft_3.tcl
+run 50 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source tb_fft_3.tcl
+run 50 us
+run 10 us
+run 5 us
+run 10 us
+close_sim
+launch_simulation
+source tb_fft_3.tcl
+run 50 us
+run 10 us
+run 5 us
+run 5 us
+run 5 us
+close_sim
