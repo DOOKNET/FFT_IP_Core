@@ -108,9 +108,6 @@ initial begin
 
     #5000
     $finish;
-
-
 end
-
 
 endmodule // 
