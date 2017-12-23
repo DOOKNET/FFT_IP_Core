@@ -1,10 +1,5 @@
 `timescale 1ns / 1ps
 `define clk_period 20
-//////////////////////////////////////////////////////////////////////////////////
-// Create Date: 2017/01/18 16:40:21
-// Design Name: 
-// Module Name: fft_tb
-//////////////////////////////////////////////////////////////////////////////////
 
 module tb_fft_2();
  
@@ -33,7 +28,6 @@ module tb_fft_2();
        always #(`clk_period/2)clk = ~clk;//产生50MHZ的系统时钟
        integer i;
         initial begin
-          // Initialize Inputs
              rst=0;;//复位
              s_axis_data_tdata=0;//输入初始化为0
              #100;
@@ -82,5 +76,4 @@ module tb_fft_2();
                       always @(posedge clk ) 
                          if(m_axis_data_tvalid==1'b1)        // m_axis_data_tvalid有效时 输出    
                             $fdisplay(fft_im_file,"%d",fft_im_dataout);      
-
 endmodule
